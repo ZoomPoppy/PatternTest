@@ -1,3 +1,5 @@
+package FactoryPattern;
+
 /**
  * Created by zz on 2015/4/23.
  */
