@@ -9,7 +9,7 @@ import CommandPattern.Command.NoCommand;
 public class RemoteCotrol {
     Command[] onCommands;
     Command[] offCommands;
-
+    Command undoCommand ;
     public RemoteCotrol(){
         onCommands = new Command[7];
         offCommands = new Command[7];
@@ -19,6 +19,7 @@ public class RemoteCotrol {
             onCommands[i] = noCommand;
             offCommands[i] = noCommand;
         }
+        undoCommand = noCommand;
     }
     public void setCommand(int slot,Command onCommand,Command offCommand){
         onCommands[slot] = onCommand;
@@ -26,9 +27,14 @@ public class RemoteCotrol {
     }
     public void onButtonPress(int slot){
         onCommands[slot].execute();
+        undoCommand = onCommands[slot];
     }
     public void offButtonPress(int slot){
         offCommands[slot].execute();
+        undoCommand = offCommands[slot];
+    }
+    public void undoButtonPress(){
+        undoCommand.undo();
     }
 
     public String toString(){

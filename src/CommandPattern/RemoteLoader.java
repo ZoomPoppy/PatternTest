@@ -39,6 +39,7 @@ public class RemoteLoader {
         remoteCotrol.offButtonPress(0);
         remoteCotrol.offButtonPress(1);
         remoteCotrol.offButtonPress(2);
+        remoteCotrol.undoButtonPress();
 
 
     }
