@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ecb3b02-87db-4188-b6fc-fb9bc17d5b67" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PatternTest.iws" />
@@ -688,7 +687,7 @@
       <workItem from="1429765752319" duration="13373000" />
       <workItem from="1429495407118" duration="10316000" />
       <workItem from="1429925060598" duration="13068000" />
-      <workItem from="1430017888174" duration="1382000" />
+      <workItem from="1430017888174" duration="1395000" />
     </task>
     <task id="LOCAL-00001" summary="i want to test intelliJ IDEA's git">
       <created>1430019103255</created>
@@ -696,11 +695,17 @@
       <option name="project" value="LOCAL" />
       <updated>1430019103255</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="i want to test intelliJ IDEA's git">
+      <created>1430019298819</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1430019298819</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69678000" />
+    <option name="totallyTimeSpent" value="69691000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
