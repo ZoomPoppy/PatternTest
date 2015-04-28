@@ -1,5 +1,7 @@
 package StatePattern;
 
+import StatePattern.DefectDesign.GumballMachine;
+
 /**
  * Created by zz on 2015/4/28.
  */
@@ -14,7 +16,7 @@ public class GumballMachineTestDrive {
         System.out.println(gumballMachine);
 
         gumballMachine.insertQuarter();
-        gumballMachine.ejectQuater();
+        gumballMachine.ejectQuarter();
         gumballMachine.turnCrank();
         System.out.println(gumballMachine);
 
