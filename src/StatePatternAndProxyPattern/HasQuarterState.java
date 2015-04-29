@@ -1,6 +1,4 @@
-package StatePattern;
-
-import StatePattern.DefectDesign.GumballMachine;
+package StatePatternAndProxyPattern;
 
 import java.util.Random;
 

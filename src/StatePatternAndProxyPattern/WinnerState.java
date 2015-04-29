@@ -1,6 +1,4 @@
-package StatePattern;
-
-import StatePattern.DefectDesign.GumballMachine;
+package StatePatternAndProxyPattern;
 
 /**
  * Created by zz on 2015/4/28.

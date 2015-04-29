@@ -1,8 +1,4 @@
-package StatePattern.DefectDesign;
-
-import StatePattern.*;
-
-import java.util.Stack;
+package StatePatternAndProxyPattern;
 
 /**
  * Created by zz on 2015/4/28.
@@ -15,13 +11,16 @@ public class GumballMachine {
     State soldState;
     State winnerState;
     State state = soldOutState;
+
+    String location;
     int count = 0;
-    public GumballMachine(int numberGumballs){
+    public GumballMachine(String location,int numberGumballs){
         soldOutState = new SoldOutState(this);
         noQuarterState = new NoQuarterState(this);
         hasQuarterState = new HasQuarterState(this);
         soldState = new SoldState(this);
         winnerState = new WinnerState(this);
+        this.location = location;
         this.count =numberGumballs;
         if (numberGumballs > 0){
             state = noQuarterState;
@@ -74,5 +73,9 @@ public class GumballMachine {
 
     public State getWinnerState() {
         return winnerState;
+    }
+
+    public String getLocation(){
+        return location;
     }
 }

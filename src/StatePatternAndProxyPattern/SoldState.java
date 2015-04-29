@@ -1,8 +1,4 @@
-package StatePattern;
-
-import StatePattern.DefectDesign.GumballMachine;
-
-import java.util.Stack;
+package StatePatternAndProxyPattern;
 
 /**
  * Created by zz on 2015/4/28.
