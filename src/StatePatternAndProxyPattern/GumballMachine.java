@@ -1,10 +1,12 @@
 package StatePatternAndProxyPattern;
 
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
 /**
  * Created by zz on 2015/4/28.
  */
-//这种模式下，如果想添加一种状态，哪么你必须给每一个方法加一种状态，失败
-public class GumballMachine {
+public class GumballMachine extends UnicastRemoteObject implements GumballMachineRemote{
     State soldOutState;
     State noQuarterState;
     State hasQuarterState;
@@ -14,7 +16,7 @@ public class GumballMachine {
 
     String location;
     int count = 0;
-    public GumballMachine(String location,int numberGumballs){
+    public GumballMachine(String location,int numberGumballs) throws RemoteException{
         soldOutState = new SoldOutState(this);
         noQuarterState = new NoQuarterState(this);
         hasQuarterState = new HasQuarterState(this);

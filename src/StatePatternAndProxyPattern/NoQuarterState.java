@@ -4,7 +4,8 @@ package StatePatternAndProxyPattern;
  * Created by zz on 2015/4/28.
  */
 public class NoQuarterState implements State {
-    GumballMachine gumballMachine ;
+    //transient告诉JVM不要序列化这个字段
+    transient GumballMachine gumballMachine ;
     public NoQuarterState(GumballMachine gumballMachine){
         this.gumballMachine = gumballMachine;
     }
