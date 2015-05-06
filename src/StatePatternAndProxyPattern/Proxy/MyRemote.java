@@ -1,8 +1,6 @@
 package StatePatternAndProxyPattern.Proxy;
 
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-
+import java.rmi.*;
 /**
  * Created by zz on 2015/4/29.
  */

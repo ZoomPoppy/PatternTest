@@ -1,9 +1,9 @@
 package StatePatternAndProxyPattern.Proxy;
 
 
-import java.net.MalformedURLException;
-import java.rmi.*;
-import java.rmi.server.*;
+import java.rmi.Naming;
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 
 /**
  * Created by zz on 2015/4/29.
@@ -11,18 +11,14 @@ import java.rmi.server.*;
 public class MyRemoteImpl extends UnicastRemoteObject implements MyRemote {
     public MyRemoteImpl() throws RemoteException {
     }
-
-    @Override
-    public String sayHello() throws RemoteException {
+    public String sayHello(){
         return "Server says ,'hey'";
     }
     public static void main(String args[]){
         try{
             MyRemote service = new MyRemoteImpl();
             Naming.rebind("RemoteHello",service);
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
