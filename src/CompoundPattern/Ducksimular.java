@@ -8,16 +8,17 @@ import CompoundPattern.Duck.*;
 public class Ducksimular {
     public static void main(String args[]){
         Ducksimular ducksimulator = new Ducksimular();
-        ducksimulator.simulate();
+       AbstractDuckFactory duckFactory = new CountingDuckFactory();
+        ducksimulator.simulate(duckFactory);
     }
-    public void simulate(){
-        Quackable mallerDuck =new QuackCounter(new MallerDuck());
-        Quackable reaheadDuck = new QuackCounter(new RedheadDuck());
-        Quackable duckCall = new QuackCounter( new DuckCall());
-        Quackable rubberDuck = new QuackCounter(new RubberDuck());
+    public void simulate(AbstractDuckFactory duckFactory){
+        Quackable mallerDuck =duckFactory.createMallarDuck();
+        Quackable reaheadDuck = duckFactory.createRedheadDuck();
+        Quackable duckCall = duckFactory.createDuckCall();
+        Quackable rubberDuck = duckFactory.createRubberDuck();
         Quackable goose = new GooseAdapter(new Goose());
 
-        System.out.println("Duck Siumlator: with Decorator\n");
+        System.out.println("Duck Siumlator: with Factory\n");
         simuator(mallerDuck);
         simuator(reaheadDuck);
         simuator(duckCall);
