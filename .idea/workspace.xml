@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cec3039-7ada-47e6-91ad-1e22116b46be" name="Default" comment="">
+    <list default="true" id="2cec3039-7ada-47e6-91ad-1e22116b46be" name="Default" comment="增加工厂模式">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CompoundPattern/Duck/AbstractDuckFactory.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CompoundPattern/Duck/CountingDuckFactory.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CompoundPattern/Duck/DuckFactry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CompoundPattern/Ducksimular.java" afterPath="$PROJECT_DIR$/src/CompoundPattern/Ducksimular.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PatternTest.iws" />
@@ -71,7 +70,7 @@
       <file leaf-file-name="Ducksimular.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CompoundPattern/Ducksimular.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5630397">
+            <state vertical-scroll-proportion="0.72930646">
               <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
               <folding>
                 <element signature="e#1041#1042#0" expanded="true" />
@@ -773,7 +772,7 @@
       <workItem from="1430909558947" duration="362000" />
       <workItem from="1430919139527" duration="1786000" />
       <workItem from="1429405568921" duration="24000" />
-      <workItem from="1430962933091" duration="1311000" />
+      <workItem from="1430962933091" duration="1406000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1430407323625</created>
@@ -793,11 +792,17 @@
       <option name="project" value="LOCAL" />
       <updated>1430974525401</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="增加工厂模式">
+      <created>1430975166600</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1430975166600</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19988000" />
+    <option name="totallyTimeSpent" value="20083000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -819,9 +824,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982087" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32707182" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32707182" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33480662" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47292817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47292817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -853,7 +858,8 @@
     <MESSAGE value="nothing" />
     <MESSAGE value="复合模式，初始化" />
     <MESSAGE value="增加装饰器模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加装饰器模式" />
+    <MESSAGE value="增加工厂模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加工厂模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1271,7 +1277,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CompoundPattern/Ducksimular.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5630397">
+        <state vertical-scroll-proportion="0.72930646">
           <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
           <folding>
             <element signature="e#1041#1042#0" expanded="true" />
