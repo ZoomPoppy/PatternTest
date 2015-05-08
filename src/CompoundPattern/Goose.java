@@ -7,5 +7,6 @@ public class Goose {
     public void hoke(){
 
         System.out.println("Goose hoke");
+
     }
 }

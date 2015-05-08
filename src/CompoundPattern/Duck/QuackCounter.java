@@ -1,5 +1,8 @@
 package CompoundPattern.Duck;
 
+
+import CompoundPattern.Observable.Observer;
+
 /**
  * Created by zz on 2015/5/7.
  */
@@ -16,5 +19,15 @@ public class QuackCounter implements Quackable {
     }
     public static int  getQuack(){
         return numberOfQuacks;
+    }
+
+    @Override
+    public void registerObserver(Observer observer) {
+            duck.registerObserver(observer);
+    }
+
+    @Override
+    public void notifyObservers() {
+
     }
 }
