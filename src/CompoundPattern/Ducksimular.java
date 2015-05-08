@@ -18,12 +18,15 @@ public class Ducksimular {
         Quackable rubberDuck = duckFactory.createRubberDuck();
         Quackable goose = new GooseAdapter(new Goose());
 
-        System.out.println("Duck Siumlator: with Factory\n");
-        simuator(mallerDuck);
-        simuator(reaheadDuck);
-        simuator(duckCall);
-        simuator(rubberDuck);
-        simuator(goose);
+        Flock flockOfDucks = new Flock();
+        flockOfDucks.add(mallerDuck);
+        flockOfDucks.add(reaheadDuck);
+        flockOfDucks.add(duckCall);
+        flockOfDucks.add(rubberDuck);
+        flockOfDucks.add(goose);
+
+        System.out.println("Duck Siumlator: with 组合模式 " +"\n");
+        simuator(flockOfDucks);
         System.out.println("The ducks quacked "+QuackCounter.getQuack()+"times");
     }
     public void simuator(Quackable duck){
